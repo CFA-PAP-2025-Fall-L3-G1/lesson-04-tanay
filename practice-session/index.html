@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="page-title">Weird Facts</h1>
+        <p>Are they true or not? You decide.</p>
+        <ol>
+            <li><h4>You'll eat a lot of bugs in your life, but not while you sleep.</h4>
+                <a href="#" role="button" class="primary" onclick="answerOneTrue();">True</a>
+                <a href="#" role="button" class="contrast"  onclick="answerOneFalse();">False</a>
+                <p class="comment" id="answer-1"></p>
+            </li>
+            <li><h4>Bumblebees can fly higher than Mount Everest.</h4>
+                <a href="#" role="button" class="primary" id="answer2-true">True</a>
+                <a href="#" role="button" class="contrast" id="answer2-false">False</a>
+                <p class="comment" id="answer-2"></p>
+            </li>
+        </ol>
+    </main>
+<script src="practice-session.js"></script>
+</body>
+
+</html>

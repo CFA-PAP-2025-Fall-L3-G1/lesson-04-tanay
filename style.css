@@ -1,0 +1,91 @@
+html {
+    height: 100%;
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    text-align: center;
+    background-image: url('bg-ivana-cajina.jpg');
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+body>header {
+    max-width: 900px;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+body>header h1,
+body>header h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#page-title {
+    font-size: 3em;
+    margin: 10px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+body>main {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    height: 900px;
+    width: 900px;
+    background-image: url('moon-min.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main> div {
+    margin: 0;
+    width: 400px;
+    transition: all .5s ease-in;
+}
+
+.pin {
+    height: 50px;
+}
+
+.pin:hover {
+    cursor: pointer;
+}
+
+
+p.fact {
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    border: solid 3px #000;
+    border-radius: 20px;
+    text-align: left;
+    transition: all .5s ease-in;
+}
+
+p.fact:empty {
+border: 0;
+background: transparent;
+}

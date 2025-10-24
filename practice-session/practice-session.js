@@ -25,8 +25,33 @@ Hint 2 - Use variables to save yourself some repetitive typing.
 */
 
 
+const answer1 = document.getElementById("answer-1");
+const answer2 = document.getElementById("answer-2");
+const answer1img = document.getElementById("answer-1");
+const answer2img = document.getElementById("answer-2");
+
+function answerOneTrue() {
+  answer1img.innerHTML = `Correct! <img src="thumbs-up.png" alt="Thumbs up" class="thumb">`;
+}
+
+function answerOneFalse() {
+  answer1img.innerHTML = `Incorrect! <img src="thumbs-down.png" alt="Thumbs down" class="thumb">`;
+}
+
+
+function answerTwoTrue() {
+  answer2img.innerHTML = `Correct! <img src="thumbs-up.png" alt="Thumbs up" class="thumb">`;
+}
+
+function answerTwoFalse() {
+  answer2img.innerHTML = `Incorrect! <img src="thumbs-down.png" alt="Thumbs down" class="thumb">`;
+}
+
+
+document.getElementById("answer2-true").addEventListener("click", answerTwoTrue);
+document.getElementById("answer2-false").addEventListener("click", answerTwoFalse);
 
 
 
 
-//Exercise 2
+
